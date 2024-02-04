@@ -22,14 +22,14 @@ public class Main {
 
         System.out.println("Задание 3");
         int year = 2021;
-         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+         if (year % 4 == 0 && year % 100 != 0 && year > 1584 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
         }
 
          System.out.println("Задание 4");
-        int deliveryDistance = 95;
+        int deliveryDistance = 130;
         int deliveryDays = 1;
         if (deliveryDistance > 20) {
             deliveryDays++;
@@ -40,45 +40,22 @@ public class Main {
         if (deliveryDistance < 100){
             System.out.println("Доставки нет!");
         }
-        System.out.println("Доставка занимает: " + deliveryDays);
+
+
 
         System.out.println("Задание 5");
         int monthNumber = 1;
         switch (monthNumber) {
-            case 12:
+            case 12, 1, 2:
                 System.out.println(monthNumber + " это зимний месяц");
                 break;
-            case 1:
-                System.out.println(monthNumber + " это зимний месяц");
-                break;
-            case 2:
-                System.out.println(monthNumber + " это зимний месяц");
-                break;
-            case 3:
+            case 3, 4, 5:
                 System.out.println(monthNumber + " это весенний месяц");
                 break;
-            case 4:
-                System.out.println(monthNumber + " это весенний месяц");
-                break;
-            case 5:
-                System.out.println(monthNumber + " это весенний месяц");
-                break;
-            case 6:
+            case 6, 7, 8:
                 System.out.println(monthNumber + " это летний месяц");
                 break;
-            case 7:
-                System.out.println(monthNumber + " это летний месяц");
-                break;
-            case 8:
-                System.out.println(monthNumber + " это летний месяц");
-                break;
-            case 9:
-                System.out.println(monthNumber + " это осенний месяц");
-                break;
-            case 10:
-                System.out.println(monthNumber + " это осенний месяц");
-                break;
-            case 11:
+            case 9, 10, 11:
                 System.out.println(monthNumber + " это осенний месяц");
                 break;
             default:
